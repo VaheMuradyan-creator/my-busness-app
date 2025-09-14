@@ -1,0 +1,64 @@
+<!-- Save this as index.html in your GitHub Pages repo -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Business App Redirector</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #f7f7f7;
+            color: #333;
+            font-family: 'Quicksand', Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .container {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            display: inline-block;
+            padding: 40px 32px;
+        }
+        h1 {
+            color: #07617a;
+            font-size: 2em;
+            margin-bottom: 16px;
+        }
+        .notify {
+            color: #fff;
+            background: #07617a;
+            padding: 10px 24px;
+            border-radius: 6px;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 16px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <script>
+        // Set this to your real app URL when ready!
+        var realAppUrl = ""; // Leave blank for now
+
+        window.onload = function() {
+            if (realAppUrl && realAppUrl !== "") {
+                window.location.href = realAppUrl;
+            } else {
+                // Fallback: show the page, or redirect to a business guide
+                // Uncomment the next line if you want to auto-redirect:
+                 window.location.href = "https://www.entrepreneur.com/article/77962";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Business App Coming Soon!</h1>
+        <p>
+            This page will redirect to my business app when it is ready.<br>
+            Please check back soon!
+        </p>
+        <span class="notify">Stay tuned for updates!</span>
+    </div>
+</body>
+</html>
